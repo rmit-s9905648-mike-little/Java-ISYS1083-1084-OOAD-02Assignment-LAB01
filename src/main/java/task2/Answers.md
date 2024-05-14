@@ -2,7 +2,8 @@
 
 ![](imagePathGoesHere)
 
-
+Here is the class diagram...
+![](task2_classDiagrams.png)
 
 
 
@@ -11,7 +12,7 @@
 
 #### 2.2.A: Name at least 3 smells that you identified BEFORE making the change of point 2.1, and provide your reasons. Is there any specific smell that is solved with the extract superclass? _No less than 350 words_.
   
-WRITE YOUR ANSWER EHRE
+WRITE YOUR ANSWER HERE
   
   
   
