@@ -1,6 +1,6 @@
 #### 2.1: Please add the Class Diagram here.
 
-![](imagePathGoesHere)
+
 
 Here is the class diagram...
 ![](task2_classDiagrams.png)
@@ -16,7 +16,7 @@ WRITE YOUR ANSWER HERE
 
 With the original “***Current account***” and “***Savings Account***” Classes, There was considerable code duplication in the class properties with respect to the following class properties : *name, Address,  [bank] BSB, [Bank] Account number, [Interest] rate, [Bank account] balance*.
 
-In addition, there was considerable duplication in the class methods with respect to *“getBalance()”, “getRate()”, “updateAddress(String newAddress)”, “deposit(double amt)”, “withdraw(double amt)*”, as these method had the same implementation body. However the implementation of the “withdraw(double amt)” method in these classes were different.
+In addition, there was considerable duplication in the class methods with respect to *“getBalance()”, “getRate()”, “updateAddress(String newAddress)”, “deposit(double amt)”, “withdraw(double amt)*”, as these method had the same implementation body; however the implementation of the “withdraw(double amt)” method in these classes were different.
 
 In analyzing this application code, there are three code smell candidates:
 -  “**Data clumps**”, Where different parts of the application code Contain identical groups of variables, as given in the properties of “CurrentAccount”, and “SavingsAccount”.
@@ -29,9 +29,9 @@ In analyzing this application code, there are three code smell candidates:
 The problems with code duplication in an application:
 - The application that has duplicate application code choose up memory resources and will impact the application performance, which is demonstrated by the large overlapping of application code between “CurrentAccount” and “SavingsAccount”.
 
-- By “copy paste programming” results in duplicate code, which can introduce security vulnerabilities that attackers can exploit to gain access to your application code.
+- By “copy and paste programming” results in duplicate code, which can introduce security vulnerabilities that attackers can exploit to gain access to your application code.
 
-- Having duplicate code in a large application can increase the difficulty to maintain low software defect application code..
+- Having duplicate code in a large application can increase the difficulty to maintain low software defect application code.
 
 
 From this analysis as it appears that code duplication appears to be the most likely candidate, then using the “**Extracting the SuperClass**” refactoring technique, resolves the “duplicate code” code smell, as it has procedures for pulling up class data properties, and class methods,
@@ -41,4 +41,4 @@ From this analysis as it appears that code duplication appears to be the most li
 
 WRITE YOUR ANSWER HERE
 
-this is a test..
+this is a test!!!
