@@ -10,10 +10,35 @@ public abstract class Account
     double rate;
     double balance;
 
-    abstract double getBalance();
-    abstract double getRate();
-    abstract void updateAddress(String newAddress);
-    abstract void deposit(double amt);
+    //------------------------------------------------------------------
+    public double getBalance()
+    {
+        return balance;
+
+    }// close public double getBalance()
+
+    //------------------------------------------------------------------
+    public double getRate()
+    {
+        return rate;
+
+    }// close public double getRate()
+
+    //------------------------------------------------------------------
+    public void updateAddress(String newAddress)
+    {
+        address = newAddress;
+
+    }// close public void updateAddress(String newAddress)
+
+    //------------------------------------------------------------------
+    public void deposit(double amt)
+    {
+        balance += amt;
+
+    }// close  public void deposit(double amt)
+
+
     abstract boolean withdraw(double amt);
 
 }//close public abstract class Account

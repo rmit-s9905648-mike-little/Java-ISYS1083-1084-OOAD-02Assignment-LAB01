@@ -35,33 +35,6 @@ class SavingsAccount extends Account
 
     }// close public SavingsAccount()
 
-    //------------------------------------------------------------------
-    public double getBalance()
-    {
-        return balance;
-
-    }// close public double getBalance()
-
-    //------------------------------------------------------------------
-    public double getRate()
-    {
-        return rate;
-
-    }// close  public double getRate()
-
-    //------------------------------------------------------------------
-    public void updateAddress(String newAddress)
-    {
-        address = newAddress;
-
-    }// close public void updateAddress(String newAddress)
-
-    //------------------------------------------------------------------
-    public void deposit(double amt)
-    {
-        balance += amt;
-
-    }// close public void deposit(double amt)
 
     //------------------------------------------------------------------
     public boolean withdraw(double amt)
